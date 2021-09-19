@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto:100,300,regular,italic,500,500italic,700,900&display=swap&subset=cyrillic-ext"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 4</title>
+</head>
+
+
+<body>
+	<header id="hd" class="header">
+		<h1 class="header__title"><span class="css1">C</span><span class="css2">S</span><span class="css3">S</span>
+			свойства для работы с текстом и шрифтами</h1>
+		<div class="header__img">
+			<img width="500" src="img/main2.jpg" alt="image">
+			<img width="500" src="img/main.jpg" alt="image">
+			<img width="500" src="img/main3.jpg" alt="image">
+		</div>
+		<nav class="nav">
+			<ul class="nav__menu">
+				<li><a href="#fn" class="nav__link">Подключения шрифтов</a></li>
+				<li><a href="#sf" class="nav__link">CSS свойства для работы с шрифтами</a></li>
+				<li><a href="#st" class="nav__link">CSS свойства для работы с текстом</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<div id="fn" class="main__fonts">
+			<h2 class="main__title">Подключения шрифтов</h2>
+			<div class="main__version1 version1">
+				<h3 class="main__subtitle">Используйте всю силу Google Fonts</h3>
+				<img width="500" src="img/fonts.png" alt="image" class="version1__img">
+				<div class="version1__text">
+					<p>Вы когда-нибудь слышали про Google Fonts? Если вкратце - это сервис, с помощью которого вы можете
+						подключить более 700 шрифтов на свой сайт.</p>
+					<p><span>Шаг 1.</span> Перейдите на <a class="link" target="_blank"
+							href="https://fonts.google.com/">официальный
+							сайт</a> сервиса.
+					</p>
+					<p><span>Шаг 2.</span> Найдите в коллекции Гугл шрифтов те, которые вам подходят. В меню можно сузить
+						круг задав язык, начертание и популярность шрифта.Для того, чтобы сервис показал шрифты с поддержкой
+						русского языка в пункте Languages выберите Cyrillic.</p>
+					<p><span>Шаг 3.</span> Представим, вам понравился шрифт Roboto. Нажмите на него, после этого вы можете
+						выбрать нужные начертания. Помните, чем больше начертаний вы выберите, тем больше будет вес
+						загружаемого файла. </p>
+					<p><span>Шаг 5.</span> Выберите владку @IMPORT. Далее, скопируйте строку кода, содержащую "@import" и
+						вставьте на первую строчку CSS файла вашего сайта. Или выберите владку link. Далее, скопируйте строку
+						кода, содержащую "link" и вставьте над подключением файла CSS в вашем html файле.</p>
+				</div>
+			</div>
+			<div class="main__version2 version2">
+				<h3 class="main__subtitle">Кастомное подключение шрифтов с помощью CSS</h3>
+				<img width="500" src="img/font-face.jpg" alt="image" class="version2__img">
+				<div class="version2__text">
+					<p>Проще всего найти их с помощью сервиса WebFonts, что мы и сделаем.</p>
+					<p><span>Шаг 1.</span> Перейдите на <a class="link" target="_blank"
+							href="https://webfonts.pro/">официальный сайт</a> сервиса</p>
+					<p><span>Шаг 2.</span> Найдите подходящий шрифт с помощью строки поиска. </p>
+					<p><span>Шаг 3.</span> Нажимаем на название шрифта и переходим на страницу настроек.</p>
+					<p><span>Шаг 4.</span> Ищем нужные начертания и скачиваем их в формате TTF в папку Fonts нашего проекта.
+					</p>
+					<p><span>Шаг 5.</span> Дальше нам нужно преобразовать шрифты формата TTF в формат WOFF и WOFF2 с помощью
+						сервиса <a class="link" target="_blank" href="https://transfonter.org/">Transfonter</a></p>
+					<p><span>Шаг 6.</span> Загружаем на него наши шрифты, конвертируем их и скачиваем в папку Fonts, TTF
+						файлы удаляем из папки. В архиве находим файл stylesheets.css, копируем директиву @font-face и
+						вставляем в наш главный style.css</p>
+					<p><span>Шаг 7.</span> В подключенной конструкции @font-face мы меняем пути к файлам шрифтов на
+						корректные пути.</p>
+				</div>
+			</div>
+		</div>
+		<div id="sf" class="main__stylef">
+			<h2 class="main__title">CSS свойства для работы с шрифтами</h2>
+			<div class="family">
+				<h3 class="family__subtitle">Свойство <span class="subtitle">font-family</span>, семейство шрифта</h3>
+				<p> В значении этого свойства указывается список названий шрифтов, перечисленных через запятую. В начале
+					списка располагают самый желаемый шрифт, затем менее желаемый, а в самом конце списка — общий тип
+					шрифта. </p>
+				<div class="family__type">
+					<img src="img/serif.png" alt="image" class="family__img">
+					<div class="serif _domine">
+						<h4 class="serif__title">Serif</h4>
+						<p class="serif__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.</p>
+					</div>
+					<div class="sans">
+						<h4 class="sans__title">Sans-Serif</h4>
+						<p class="sans__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.</p>
+					</div>
+					<div class="cursive">
+						<h4 class="cursive__title">Cursive</h4>
+						<p class="cursive__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.</p>
+					</div>
+					<div class="fantasy _compotes">
+						<h4 class="fantasy__title">Fantasy</h4>
+						<p class="fantasy__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.</p>
+					</div>
+					<div class="monospace _spacemono">
+						<h4 class="monospace__title">Monospace</h4>
+						<p class="monospace__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.</p>
+					</div>
+				</div>
+			</div>
+			<div class="size">
+				<h3 class="size__subtitle">Свойство <span class="subtitle">font-size</span>, размер шрифта</h3>
+				<img src="img/font-size.png" alt="image" class="size__img">
+				<p class="size__text">Размером шрифта управляет свойство font-size. Значение свойства задаёт желаемую высоту
+					символа шрифта. Причём единицы измерения могут быть абсолютными или относительными. </p>
+				<div class="size__type">
+					<div class="size__16">
+						<h4 class="size__title">font-size: 16px;</h4>
+						<p class="size__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="size__25">
+						<h4 class="size__title">font-size: 25px;</h4>
+						<p class="size__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="size__40">
+						<h4 class="size__title">font-size: 40px;</h4>
+						<p class="size__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			<div class="style">
+				<h3 class="style__subtitle">Свойство <span class="subtitle">font-style</span></h3>
+				<p class="style__text">Начертание текста можно задавать с помощью свойства font-style. Закономерный вопрос —
+					а чем отличается курсивное и наклонное начертание? Если задано значение italic, браузер будет пытаться
+					найти в заданном шрифте отдельное курсивное начертание символов. В некоторых шрифтах отдельный курсив
+					предусмотрен. Если отдельного курсивного начертания в шрифте не предусмотрено, то браузер сделает текст
+					наклонным, то есть сымитирует курсив. Что равноценно заданию тексту значения font-style: oblique.</p>
+				<div class="style__type _lora">
+					<div class="style__italic">
+						<h4 class="style__title">italic — курсивное начертание</h4>
+						<p class="style__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="style__oblique">
+						<h4 class="style__title">oblique — наклонное начертание</h4>
+						<p class="style__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="style__normal">
+						<h4 class="style__title">normal — обычное начертание</h4>
+						<p class="style__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			<div class="weight">
+				<h3 class="weight__subtitle">Свойство <span class="subtitle">font-weight</span>, насыщенность шрифта</h3>
+				<p class="weight__text">Ещё один параметр шрифта, которым мы можем управлять — это насыщенность или толщина
+					шрифта. Шрифт может быть жирнее или тоньше обычного начертания. Устанавливается насыщенность с помощью
+					свойства font-weight. В качестве значения можно использовать ключевое слово или число.</p>
+				<div class="weight__type">
+					<div class="weight__thin">
+						<h4 class="weight__title">100: Thin</h4>
+						<p class="weight__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="weight__light">
+						<h4 class="weight__title">300: Light</h4>
+						<p class="weight__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="weight__normal">
+						<h4 class="weight__title">400: Normal</h4>
+						<p class="weight__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="weight__medium">
+						<h4 class="weight__title">500: Medium</h4>
+						<p class="weight__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="weight__semibold _lora">
+						<h4 class="weight__title">600: Semi Bold</h4>
+						<p class="weight__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="weight__bold">
+						<h4 class="weight__title">700: Bold</h4>
+						<p class="weight__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="weight__black">
+						<h4 class="weight__title">900: Black</h4>
+						<p class="weight__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="st" class="main__stylet">
+			<h2 class="main__title">CSS свойства для работы с текстом</h2>
+			<img src="img/CSS-Text.png" alt="image" class="main__img">
+			<div class="color">
+				<h3 class="color__subtitle">Свойство <span class="c">c</span><span class="o">o</span><span
+						class="l">l</span><span class="o">o</span><span class="r">r</span>, цвет текста</h3>
+				<p class="color__text"> Цвет может быть задан в виде ключевого слова.Ещё один вариант указания цвета — в
+					виде <span>шестнадцатеричного значения</span>.В этом случае цвет формируется из красной, зелёной и синей
+					составляющих,
+					заданных в виде шестнадцатеричного числа от 00 до ff. Помимо шести, цветовой код может содержать три
+					знака, в этом случае второй символ в цветовых составляющих дублируется первым. Если не хочется иметь дело
+					с шестнадцатеричными значениями, можно воспользоваться специальной функцией <span>rgb</span>, в которой
+					указывается
+					цвет в более привычном десятичном виде в диапазоне от 0 до 255 также в виде трёх цветовых составляющих,
+					перечисленных через запятую.У функции rgb есть расширенная версия — <span>rgba</span>. В этом случае
+					помимо указания
+					цвета последним значением указывается степень непрозрачности цвета — alpha. Значение может быть от 0
+					(полностью прозрачный) до 1 (полностью непрозрачный)/
+				</p>
+				<div class="color__type">
+					<div class="color__six">
+						<h4 class="color__title">color: <span>#258618</span></h4>
+						<p class="color__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="color__rgb">
+						<h4 class="color__title">color: <span>rgb(131, 18, 141)</span></h4>
+						<p class="color__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="color__rgba">
+						<h4 class="color__title">color: <span>rgba(9, 27, 134, 0.7)</span></h4>
+						<p class="color__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			<div class="align">
+				<h3 class="align__subtitle">Свойство <span class="subtitle">text-align</span>, горизонтальное выравнивание
+					текста</h3>
+				<p class="align__text"> Cвойство text-align описывает, как выравнивается текст внутри блока по
+					горизонтали.Важно помнить, что свойство text-align применяется именно к самому блоку-контейнеру, внутри
+					которого находится текстовый контент.
+				</p>
+				<div class="align__type">
+					<div class="align__center">
+						<h4 class="align__title">center — по центру блока</h4>
+						<p class="align__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="align__justify">
+						<h4 class="align__title">justify — по ширине блока, при этом слова в строке будут размещаться так,
+							чтобы занять равномерно всё пространство строки</h4>
+						<p class="align__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+							harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="align__left">
+						<h4 class="align__title">left — выравнивание по левому краю блока, это значение по умолчанию</h4>
+						<p class="align__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="align__right">
+						<h4 class="align__title">right — по правому краю блока</h4>
+						<p class="align__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			<div class="decoration">
+				<h3 class="decoration__subtitle">Свойство <span class="subtitle">text-decoration</span>, подчёркивание и
+					другие эффекты</h3>
+				<p class="decoration__text"> Дополнительное оформление текста можно задать с помощью свойства
+					text-decoration. Вот его значения:
+				</p>
+				<div class="decoration__type">
+					<div class="decoration__lineth">
+						<h4 class="decoration__title">line-through — <span>зачёркивание</span></h4>
+						<p class="decoration__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="decoration__overline">
+						<h4 class="decoration__title">overline — надчёркивание</h4>
+						<p class="decoration__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="decoration__underline">
+						<h4 class="decoration__title">underline — <span>подчёркивание</span></h4>
+						<p class="decoration__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="decoration__none">
+						<h4 class="decoration__title">none — убирает вышеперечисленные эффекты.</h4>
+						<div class="decorationk__link">
+							<a target="_blank" href="https://html.spec.whatwg.org/#the-p-element">Обычная ссылка</a>
+						</div>
+						<div class="decorationk__link none">
+							<a target="_blank" href="https://html.spec.whatwg.org/#the-p-element">Cсылка, для которой задан
+								параметр text-decoration: none;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="transform">
+				<h3 class="transform__subtitle">Свойство <span class="subtitle">text-transform</span>, регистр символов</h3>
+				<p class="transform__text"> С помощью CSS можно также управлять регистром символов: делать буквы строчными
+					(маленькими) или заглавными (большими). Делается это с помощью свойства text-transform. Его значения:
+				</p>
+				<div class="transform__type">
+					<div class="transform__lowercase">
+						<h4 class="transform__title">lowercase — все строчные</h4>
+						<p class="transform__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="transform__uppercase">
+						<h4 class="transform__title">uppercase — все заглавные</h4>
+						<p class="transform__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="transform__capitalize">
+						<h4 class="transform__title">capitalize — каждое слово начинается с большой буквы</h4>
+						<p class="transform__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in, laboriosam, quaerat ducimus neque
+							omnis aliquid consequuntur facere repellat voluptates hic minima.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit.</p>
+					</div>
+					<div class="transform__none">
+						<h4 class="transform__title">none — отменяет изменение регистра</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab debitis
+							eveniet a, eaque perspiciatis quisquam unde molestiae voluptates</p>
+						<p class="transformnone">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab debitis
+							eveniet a, eaque perspiciatis quisquam unde molestiae voluptates</p>
+					</div>
+				</div>
+			</div>
+			<div class="letter">
+				<h3 class="letter__subtitle">Свойство <span class="subtitle">letter-spacing</span></h3>
+				<p class="letter__text"> Определяет интервал между символами в пределах элемента.
+				</p>
+				<div class="letter__type">
+					<div class="letter__5px">
+						<h4 class="letter__title">letter-spacing: 5px;</h4>
+						<p class="letter__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in </p>
+					</div>
+					<div class="letter__15px">
+						<h4 class="letter__title">letter-spacing: 15px;</h4>
+						<p class="letter__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in </p>
+					</div>
+				</div>
+			</div>
+			<div class="word">
+				<h3 class="word__subtitle">Свойство <span class="subtitle">word-spacing</span></h3>
+				<p class="word__text"> Устанавливает интервал между словами. Если для текста задано выравнивание через
+					text-align со значением justify (выравнивание по ширине), то интервал между словами будет установлен
+					принудительно, но не меньше значения, указанного через word-spacing.
+				</p>
+				<div class="word__type">
+					<div class="word__15px">
+						<h4 class="word__title">word-spacing: 15px;</h4>
+						<p class="word__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in </p>
+					</div>
+					<div class="word__35px">
+						<h4 class="word__title">word-spacing: 35px;</h4>
+						<p class="word__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum
+							architecto adipisci quae? Sint optio quibusdam, expedita in </p>
+					</div>
+				</div>
+			</div>
+			<div class="indent">
+				<h3 class="indent__subtitle">Свойство <span class="subtitle">text-indent</span></h3>
+				<p class="indent__text"> Устанавливает величину отступа первой строки блока текста (например, для абзаца
+					p). Воздействия на все остальные строки не оказывается. Допускается отрицательное значение для создания
+					выступа первой строки, но следует проверить, чтобы текст не выходил за пределы окна браузера.
+				</p>
+				<div class="indent__type">
+					<div class="indent__50px">
+						<h4 class="indent__title">text-indent: 50px;</h4>
+						<p class="indent__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolorem
+							vel distinctio eaque ullam ipsa perspiciatis at, quod dignissimos illum beatae dolorum maiores
+							veritatis debitis blanditiis a veniam dicta ad.</p>
+					</div>
+				</div>
+			</div>
+			<div class="white">
+				<h3 class="white__subtitle">Свойство <span class="subtitle">white-space</span></h3>
+				<p class="white__text"> Свойство white-space устанавливает, как отображать пробелы между словами. В обычных
+					условиях любое количество пробелов в коде HTML показывается на веб-странице как один. Исключением
+					является тег pre, помещенный в этот контейнер текст выводится со всеми пробелами, как он был
+					отформатирован пользователем. Таким образом, white-space имитирует работу тега pre, но в отличие от него
+					не меняет шрифт на моноширинный.
+				</p>
+				<div class="white__type">
+					<div class="white__nowrap">
+						<h4 class="white__title">Значение - nowrap.
+							Пробелы не учитываются, переносы строк в коде HTML игнорируются, весь текст отображается одной
+							строкой.</h4>
+						<p class="white__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolorem
+							vel distinctio eaque ullam ipsa perspiciatis at, quod dignissimos illum beatae dolorum maiores
+							veritatis debitis blanditiis a veniam dicta ad.</p>
+					</div>
+				</div>
+			</div>
+			<div class="lineheigh">
+				<h3 class="lineheigh__subtitle">Свойство <span class="subtitle">line-height</span>, высота строки</h3>
+				<img src="img/lineheight.png" alt="image" class="lineheigh__img">
+				<p class="lineheigh__text"> Окей, с помощью свойства font-size мы управляем размером отдельных символов
+					шрифта. Но дело в том, что тексты — это обычно больше, чем набор символов. Тексты состоят из строк,
+					которые располагаются друг под другом. И хотелось бы уметь управлять расположением этих строк
+					относительно друг друга и другого контента. Для этого в CSS есть свойство line-height. Оно управляет
+					высотой строки или, если точнее, межстрочным интервалом. Как и в случае с размером шрифта, значения
+					line-height можно задавать разными способами.
+				</p>
+				<div class="lineheigh__type">
+					<div class="lineheigh__150">
+						<h4 class="lineheigh__title">line-height: 150%;</h4>
+						<p class="lineheigh__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,
+							dolorem vel distinctio eaque ullam ipsa perspiciatis at, quod dignissimos illum beatae dolorum
+							maiores
+							veritatis debitis blanditiis a veniam dicta ad. Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Laudantium,
+							dolorem vel distinctio eaque ullam ipsa perspiciatis at, quod dignissimos illum beatae dolorum
+							maiores
+							veritatis debitis blanditiis a veniam dicta ad.</p>
+					</div>
+					<div class="lineheigh__300">
+						<h4 class="lineheigh__title">line-height: 300%;</h4>
+						<p class="lineheigh__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,
+							dolorem vel distinctio eaque ullam ipsa perspiciatis at, quod dignissimos illum beatae dolorum
+							maiores
+							veritatis debitis blanditiis a veniam dicta ad. Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Laudantium,
+							dolorem vel distinctio eaque ullam ipsa perspiciatis at, quod dignissimos illum beatae dolorum
+							maiores
+							veritatis debitis blanditiis a veniam dicta ad.</p>
+					</div>
+				</div>
+			</div>
+			<div class="shadow">
+				<h3 class="shadow__subtitle">Свойство <span>text-shadow</span></h3>
+				<p class="shadow__text"> Добавляет тень к тексту, а также устанавливает её параметры: цвет тени, смещение
+					относительно надписи и радиус размытия.
+				</p>
+				<div class="shadow__type">
+					<div class="shadow__one">
+						<p><span class="one">Very long shadow</span></p>
+					</div>
+					<div class="shadow__two">
+						<p><span class="lorem">Lorem</span> <span class="ipsum">ipsum</span>
+						</p>
+					</div>
+					<div class="shadow__three _opensans">
+						<p>Lorem ipsum dolor</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<p class="footer__text">
+			Вся информация взята из источников:
+		</p>
+		<ul class="footer__list">
+			<li class="footer__link"><a href="http://htmlbook.ru/css" target="_blank">Справочник CSS</a></li>
+			<li class="footer__link"><a href="http://site4business.net/css/kak-podklyuchit-shrift.html" target="_blank">Как
+					подключить шрифт на сайт: 3 разных способа + готовый CSS шаблон</a></li>
+			<li class="footer__link"><a href="https://htmlacademy.ru/courses/309/run/19" target="_blank">Конспект
+					«Оформление текста»</a></li>
+			<li class="footer__link"><a href="https://www.youtube.com/playlist?list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr"
+					target="_blank">Бесплатный курс по верстке сайтов от Фрилансер по жизни</a></li>
+		</ul>
+		<div class="footer-ln"><a href="#hd">На вверх</a></div>
+	</footer>
+</body>
+
+</html>

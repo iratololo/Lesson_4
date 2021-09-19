@@ -1,0 +1,561 @@
+/* &display=swap&subset=cyrillic-ext */
+/* SERIF font-family: 'Domine', serif; */
+@import url("https://fonts.googleapis.com/css?family=Domine:regular,500&display=swap&subset=cyrillic-ext");
+
+/*SANS SERIF font-family: 'Open Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600italic&display=swap&subset=cyrillic-ext");
+
+/*MONOSPACE  font-family: 'Space Mono', monospace;*/
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:regular,700&display=swap&subset=cyrillic-ext");
+
+@font-face {
+	font-family: "TT Compotes Basilic";
+	src: url("../fonts/TTCompotes-Basilic.woff2") format("woff2"), url("../fonts/TTCompotes-Basilic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lora", serif;
+	src: url("../fonts/Lora-Regular.woff2") format("woff2"), url("../fonts/Lora-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lora", serif;
+	src: url("../fonts/Lora-Italic.woff2") format("woff2"), url("../fonts/Lora-Italic.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lora", serif;
+	src: url("../fonts/Lora-SemiBoldItalic.woff2") format("woff2"),
+		url("../fonts/Lora-SemiBoldItalic.woff") format("woff");
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lora", serif;
+	src: url("../fonts/Lora-SemiBold.woff2") format("woff2"), url("../fonts/Lora-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1;
+}
+/* ------------------------------ */
+
+/* Технические классы */
+
+._domine {
+	font-family: "Domine", serif;
+}
+
+._opensans {
+	font-family: "Open Sans", sans-serif;
+}
+
+._spacemono {
+	font-family: "Space Mono", monospace;
+}
+
+._compotes {
+	font-family: "TT Compotes Basilic";
+}
+
+._lora {
+	font-family: "Lora", serif;
+}
+
+/* ------------------------------ */
+
+h1 {
+	font-size: 50px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 35px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 25px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 180%;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 300%;
+}
+
+p {
+	line-height: 115%;
+}
+
+/* HEADER */
+
+.css1 {
+	color: #543dbe;
+	text-shadow: 0.5px 0.5px 0px #543dbe, 1px 1px 0px #543dbe, 1.5px 1.5px 0px #543dbe, 2px 2px 0px #543dbe,
+		2.5px 2.5px 0px #674ce0, 3px 3px 0px #674ce0, 3.5px 3.5px 0px #674ce0, 4px 4px 0px #7356f3,
+		4.5px 4.5px 0px #7356f3, 5px 5px 0px #7356f3, 5.5px 5.5px 0px #ee56f3, 6px 6px 0px #ee56f3,
+		6.5px 6.5px 0px #ee56f3, 7px 7px 0px #ee56f3, 7.5px 7.5px 0px #ee56f3, 8px 8px 0px #ee56f3,
+		8.5px 8.5px 0px #ee56f3, 9px 9px 0px #ee56f3, 9.5px 9.5px 0px #ee56f3, 10px 10px 0px #ee56f3;
+}
+
+.css2 {
+	color: #ac2929;
+	text-shadow: 0.5px 0.5px 0px #ac2929, 1px 1px 0px #ac2929, 1.5px 1.5px 0px #ac2929, 2px 2px 0px #ac2929,
+		2.5px 2.5px 0px #ce3838, 3px 3px 0px #ce3838, 3.5px 3.5px 0px #ce3838, 4px 4px 0px #ce4a38,
+		4.5px 4.5px 0px #ce4a38, 5px 5px 0px #ce4a38, 5.5px 5.5px 0px #dd6d51, 6px 6px 0px #dd6d51,
+		6.5px 6.5px 0px #dd6d51, 7px 7px 0px #dd6d51, 7.5px 7.5px 0px #dd6d51, 8px 8px 0px #dd6d51,
+		8.5px 8.5px 0px #dd6d51, 9px 9px 0px #dd6d51, 9.5px 9.5px 0px #dd6d51, 10px 10px 0px #dd6d51;
+}
+
+.css3 {
+	color: #e0d640;
+	text-shadow: 5px 5px 0px #55be70;
+	text-shadow: 0.5px 0.5px 0px #e0d640, 1px 1px 0px #e0d640, 1.5px 1.5px 0px #e0d640, 2px 2px 0px #e0d640,
+		2.5px 2.5px 0px #bde040, 3px 3px 0px #bde040, 3.5px 3.5px 0px #bde040, 4px 4px 0px #bde040,
+		4.5px 4.5px 0px #bde040, 5px 5px 0px #bde040, 5.5px 5.5px 0px #55be70, 6px 6px 0px #55be70,
+		6.5px 6.5px 0px #55be70, 7px 7px 0px #55be70, 7.5px 7.5px 0px #55be70, 8px 8px 0px #55be70,
+		8.5px 8.5px 0px #55be70, 9px 9px 0px #55be70, 9.5px 9.5px 0px #55be70, 10px 10px 0px #55be70;
+}
+
+.header .header__title span {
+	font-weight: 900;
+	letter-spacing: 20px;
+	font-size: 80px;
+}
+
+.header__title,
+.header__img {
+	text-align: center;
+}
+
+.nav__menu .nav__link {
+	font-size: 20px;
+	color: #1d4888;
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+.main__fonts span {
+	color: #1d4888;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.main__fonts .link {
+	color: #ff0000;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.subtitle {
+	color: #ff0000;
+}
+
+.cursive {
+	font-style: italic;
+}
+
+.monospace__title {
+	font-weight: 700;
+}
+
+.size__25,
+.size__25 .size__title {
+	font-size: 25px;
+}
+
+.size__40,
+.size__40 .size__title {
+	font-size: 40px;
+}
+
+.style__italic {
+	font-style: italic;
+}
+
+.style__oblique {
+	font-style: oblique;
+}
+
+.style__title {
+	font-weight: 600;
+}
+
+.weight__thin,
+.weight__thin .weight__title {
+	font-weight: 100;
+}
+
+.weight__light,
+.weight__light .weight__title {
+	font-weight: 300;
+}
+
+.weight__light,
+.weight__light .weight__title {
+	font-weight: 300;
+}
+
+.weight__normal .weight__title {
+	font-weight: 400;
+}
+
+.weight__medium,
+.weight__medium .weight__title {
+	font-weight: 500;
+}
+
+.weight__semibold,
+.weight__semibold .weight__title {
+	font-weight: 600;
+}
+
+.weight__bold,
+.weight__bold .weight__title {
+	font-weight: 700;
+}
+
+.weight__black,
+.weight__black .weight__title {
+	font-weight: 900;
+}
+
+/* CSS свойства для работы с текстом */
+
+/* Свойство color, цвет текста */
+
+.color__subtitle span {
+	font-weight: 900;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.c {
+	color: #208d12;
+}
+.o {
+	color: #e4b92b;
+}
+.l {
+	color: #83128d;
+}
+.r {
+	color: #12478d;
+}
+
+.color__text span {
+	color: #84208d;
+	font-weight: 700;
+}
+
+.color__six span,
+.color__six .color__text {
+	color: #258618;
+}
+
+.color__rgb span,
+.color__rgb .color__text {
+	color: #83128d;
+}
+
+.color__rgba span,
+.color__rgba .color__text {
+	color: rgba(9, 27, 134, 0.7);
+}
+
+/* Свойство text-align, горизонтальное выравнивание текста */
+
+.align__center .align__text {
+	text-align: center;
+}
+
+.align__justify .align__text {
+	text-align: justify;
+}
+
+.align__right .align__text {
+	text-align: right;
+}
+
+/* Свойство text-align, горизонтальное выравнивание текста */
+
+.decoration__lineth span,
+.decoration__lineth .decoration__text {
+	text-decoration: line-through;
+}
+
+.decoration__overline span,
+.decoration__overline .decoration__text {
+	text-decoration: overline;
+}
+
+.decoration__underline span,
+.decoration__underline .decoration__text {
+	text-decoration: underline;
+}
+
+.decorationk__link {
+	text-decoration: underline;
+}
+
+.decorationk__link.none {
+	text-decoration: none;
+}
+
+/* Свойство text-align, горизонтальное выравнивание текста */
+
+.transform__lowercase .transform__text {
+	text-transform: lowercase;
+}
+
+.transform__uppercase .transform__text {
+	text-transform: uppercase;
+}
+
+.transform__capitalize .transform__text {
+	text-transform: capitalize;
+}
+
+.transform__none p {
+	text-transform: uppercase;
+}
+.transform__none .transformnone {
+	text-transform: none;
+}
+
+/* Свойство letter-spacing */
+
+.letter__5px .letter__text {
+	letter-spacing: 5px;
+}
+
+.letter__15px .letter__text {
+	letter-spacing: 15px;
+}
+
+/* Свойство word-spacing */
+
+.word__15px .word__text {
+	word-spacing: 15px;
+}
+
+.word__35px .word__text {
+	word-spacing: 35px;
+}
+
+/* Свойство text-indent */
+
+.indent__50px .indent__text {
+	text-indent: 50px;
+}
+
+/* Свойство white-space */
+
+.white__nowrap .white__text {
+	white-space: nowrap;
+}
+
+/* Свойство line-height, высота строки */
+
+.lineheigh__150 .lineheigh__text {
+	line-height: 150%;
+}
+
+.lineheigh__300 .lineheigh__text {
+	line-height: 300%;
+}
+
+/* Свойство text-shadow */
+
+.shadow__subtitle span {
+	color: #ff0000;
+	text-shadow: 1px 1px 3px rgb(255, 70, 70);
+}
+
+.shadow__type {
+	font-size: 60px;
+}
+
+.shadow__one p,
+.shadow__two p,
+.shadow__three p {
+	line-height: 200%;
+	word-spacing: 20px;
+}
+
+.shadow__two p {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.shadow__three p {
+	text-align: right;
+}
+
+.shadow__one .one {
+	font-weight: 500;
+	color: #00b7ff;
+	text-shadow: 0.5px 0.5px 0px #000, 1px 1px 0px #000, 1.5px 1.5px 0px #000000, 2px 2px 0px #000000,
+		2.5px 2.5px 0px #000, 3px 3px 0px #000, 3.5px 3.5px 0px #000000, 4px 4px 0px #000000, 4.5px 4.5px 0px #000,
+		5px 5px 0px #000, 5.5px 5.5px 0px #000000, 6px 6px 0px #000000, 6.5px 6.5px 0px #000, 7px 7px 0px #000,
+		7.5px 7.5px 0px #000000, 8px 8px 0px #000000, 8.5px 8.5px 0px #000, 9px 9px 0px #000, 9.5px 9.5px 0px #000000,
+		10px 10px 0px #000000, 10.5px 10.5px 0px #000, 11px 11px 0px #000, 11.5px 11.5px 0px #000000,
+		12px 12px 0px #000000, 12.5px 12.5px 0px #000, 13px 13px 0px #000, 13.5px 13.5px 0px #000000,
+		14px 14px 0px #000000, 14.5px 14.5px 0px #000, 15px 15px 0px #000, 15.5px 15.5px 0px #000000,
+		16px 16px 0px #000000, 16.5px 16.5px 0px #000, 17px 17px 0px #000, 17.5px 17.5px 0px #000000,
+		18px 18px 0px #000000, 18.5px 18.5px 0px #000, 19px 19px 0px #000, 19.5px 19.5px 0px #000000,
+		20px 20px 0px #000000, 20.5px 20.5px 0px #000, 21px 21px 0px #000, 21.5px 21.5px 0px #000000,
+		22px 22px 0px #000000, 22.5px 22.5px 0px #000, 23px 23px 0px #000, 23.5px 23.5px 0px #000000,
+		24px 24px 0px #000000, 24.5px 24.5px 0px #000, 25px 25px 0px #000, 25.5px 25.5px 0px #000000,
+		26px 26px 0px #000000, 26.5px 26.5px 0px #000, 27px 27px 0px #000, 27.5px 27.5px 0px #000000,
+		28px 28px 0px #000000, 28.5px 28.5px 0px #000, 29px 29px 0px #000, 29.5px 29.5px 0px #000000,
+		30px 30px 0px #000000, 30.5px 30.5px 0px #000, 31px 31px 0px #000, 31.5px 31.5px 0px #000000,
+		32px 32px 0px #000000;
+}
+
+.shadow__two .lorem {
+	font-weight: 500;
+	color: #fff;
+	text-shadow: 0.5px 0.5px 0px rgb(0, 195, 255), 1px 1px 0px rgb(0, 195, 255), 1.5px 1.5px 0px rgb(0, 195, 255),
+		2px 2px 0px rgb(0, 195, 255), 2.5px 2.5px 0px rgb(0, 195, 255), 3px 3px 0px rgb(0, 195, 255),
+		3.5px 3.5px 0px rgb(0, 195, 255), 4px 4px 0px rgb(0, 195, 255), 4.5px 4.5px 0px rgb(0, 195, 255),
+		5px 5px 0px rgb(0, 195, 255), 5.5px 5.5px 0px rgb(0, 195, 255), 6px 6px 0px rgb(0, 195, 255),
+		6.5px 6.5px 0px rgb(0, 195, 255), 7px 7px 0px rgb(0, 195, 255), 7.5px 7.5px 0px rgb(0, 195, 255),
+		8px 8px 0px rgb(0, 195, 255), 8.5px 8.5px 0px rgb(0, 195, 255), 9px 9px 0px rgb(0, 195, 255),
+		9.5px 9.5px 0px rgb(0, 195, 255), 10px 10px 0px rgb(0, 195, 255), 10.5px 10.5px 0px rgb(0, 195, 255),
+		11px 11px 0px rgb(0, 195, 255), 11.5px 11.5px 0px rgb(0, 195, 255), 12px 12px 0px rgb(0, 195, 255),
+		12.5px 12.5px 0px rgb(0, 195, 255), 13px 13px 0px rgb(0, 195, 255), 13.5px 13.5px 0px rgb(0, 195, 255),
+		14px 14px 0px rgb(0, 195, 255), 14.5px 14.5px 0px rgb(0, 195, 255), 15px 15px 0px rgb(0, 195, 255),
+		15.5px 15.5px 0px rgb(0, 195, 255), 16px 16px 0px rgb(0, 195, 255), 16.5px 16.5px 0px rgb(0, 195, 255),
+		17px 17px 0px rgb(0, 195, 255), 17.5px 17.5px 0px rgb(0, 195, 255), 18px 18px 0px rgb(0, 195, 255),
+		18.5px 18.5px 0px rgba(0, 195, 255, 0.9), 19px 19px 0px rgba(0, 195, 255, 0.9),
+		19.5px 19.5px 0px rgba(0, 195, 255, 0.9), 20px 20px 0px rgba(0, 195, 255, 0.9),
+		20.5px 20.5px 0px rgba(0, 195, 255, 0.8), 21px 21px 0px rgba(0, 195, 255, 0.8),
+		21.5px 21.5px 0px rgba(0, 195, 255, 0.8), 22px 22px 0px rgba(0, 195, 255, 0.8),
+		22.5px 22.5px 0px rgba(0, 195, 255, 0.8), 23px 23px 0px rgba(0, 195, 255, 0.7),
+		23.5px 23.5px 0px rgba(0, 195, 255, 0.7), 24px 24px 0px rgba(0, 195, 255, 0.7),
+		24.5px 24.5px 0px rgba(0, 195, 255, 0.7), 25px 25px 0px rgba(0, 195, 255, 0.6),
+		25.5px 25.5px 0px rgba(0, 195, 255, 0.6), 26px 26px 0px rgba(0, 195, 255, 0.6),
+		26.5px 26.5px 0px rgba(0, 195, 255, 0.5), 27px 27px 0px rgba(0, 195, 255, 0.5),
+		27.5px 27.5px 0px rgba(0, 195, 255, 0.5), 28px 28px 0px rgba(0, 195, 255, 0.5),
+		28.5px 28.5px 0px rgba(0, 195, 255, 0.4), 29px 29px 0px rgba(0, 195, 255, 0.4),
+		29.5px 29.5px 0px rgba(0, 195, 255, 0.4), 30px 30px 0px rgba(0, 195, 255, 0.4),
+		30.5px 30.5px 0px rgba(0, 195, 255, 0.4), 31px 31px 0px rgba(0, 195, 255, 0.4),
+		31.5px 31.5px 0px rgba(0, 195, 255, 0.3), 32px 32px 0px rgba(0, 195, 255, 0.3);
+}
+
+.shadow__two .ipsum {
+	font-weight: 500;
+	color: #fff;
+	text-shadow: 0.5px 0.5px 0px rgb(255, 0, 242), 1px 1px 0px rgb(255, 0, 242), 1.5px 1.5px 0px rgb(255, 0, 242),
+		2px 2px 0px rgb(255, 0, 242), 2.5px 2.5px 0px rgb(255, 0, 242), 3px 3px 0px rgb(255, 0, 242),
+		3.5px 3.5px 0px rgb(255, 0, 242), 4px 4px 0px rgb(255, 0, 242), 4.5px 4.5px 0px rgb(255, 0, 2425),
+		5px 5px 0px rgb(255, 0, 242), 5.5px 5.5px 0px rgb(255, 0, 242), 6px 6px 0px rgb(255, 0, 242),
+		6.5px 6.5px 0px rgb(255, 0, 242), 7px 7px 0px rgb(255, 0, 242), 7.5px 7.5px 0px rgb(255, 0, 242),
+		8px 8px 0px rgb(255, 0, 242), 8.5px 8.5px 0px rgb(255, 0, 242), 9px 9px 0px rgb(255, 0, 242),
+		9.5px 9.5px 0px rgb(255, 0, 242), 10px 10px 0px rgb(255, 0, 242), 10.5px 10.5px 0px rgb(255, 0, 242),
+		11px 11px 0px rgb(255, 0, 242), 11.5px 11.5px 0px rgb(255, 0, 242), 12px 12px 0px rgb(255, 0, 242),
+		12.5px 12.5px 0px rgb(255, 0, 242), 13px 13px 0px rgb(255, 0, 242), 13.5px 13.5px 0px rgb(255, 0, 242),
+		14px 14px 0px rgb(255, 0, 242), 14.5px 14.5px 0px rgb(255, 0, 242), 15px 15px 0px rgb(255, 0, 242),
+		15.5px 15.5px 0px rgb(255, 0, 242), 16px 16px 0px rgb(255, 0, 242), 16.5px 16.5px 0px rgb(255, 0, 242),
+		17px 17px 0px rgb(255, 0, 242), 17.5px 17.5px 0px rgb(255, 0, 242), 18px 18px 0px rgb(255, 0, 242),
+		18.5px 18.5px 0px rgba(255, 0, 242, 0.9), 19px 19px 0px rgba(255, 0, 242, 0.9),
+		19.5px 19.5px 0px rgba(255, 0, 242, 0.9), 20px 20px 0px rgba(255, 0, 242, 0.9),
+		20.5px 20.5px 0px rgba(255, 0, 242, 0.8), 21px 21px 0px rgba(255, 0, 242, 0.8),
+		21.5px 21.5px 0px rgba(255, 0, 242, 0.8), 22px 22px 0px rgba(255, 0, 242, 0.8),
+		22.5px 22.5px 0px rgba(255, 0, 242, 0.8), 23px 23px 0px rgba(255, 0, 242, 0.7),
+		23.5px 23.5px 0px rgba(255, 0, 242, 0.7), 24px 24px 0px rgba(255, 0, 242, 0.7),
+		24.5px 24.5px 0px rgba(255, 0, 242, 0.7), 25px 25px 0px rgba(255, 0, 242, 0.6),
+		25.5px 25.5px 0px rgba(255, 0, 242, 0.6), 26px 26px 0px rgba(255, 0, 242, 0.6),
+		26.5px 26.5px 0px rgba(255, 0, 242, 0.5), 27px 27px 0px rgba(255, 0, 242, 0.5),
+		27.5px 27.5px 0px rgba(255, 0, 242, 0.5), 28px 28px 0px rgba(255, 0, 242, 0.5),
+		28.5px 28.5px 0px rgba(255, 0, 242, 0.4), 29px 29px 0px rgba(255, 0, 242, 0.4),
+		29.5px 29.5px 0px rgba(255, 0, 242, 0.4), 30px 30px 0px rgba(255, 0, 242, 0.4),
+		30.5px 30.5px 0px rgba(255, 0, 242, 0.4), 31px 31px 0px rgba(255, 0, 242, 0.4),
+		31.5px 31.5px 0px rgba(255, 0, 242, 0.3), 32px 32px 0px rgba(255, 0, 242, 0.3);
+}
+
+.shadow__three {
+	font-weight: 600;
+	font-style: italic;
+	color: #fff;
+	text-shadow: 0px 0px 25px #006eff;
+}
+
+/* FOOTER */
+
+.footer__text {
+	font-weight: 500;
+	line-height: 200%;
+}
+
+.footer__link a {
+	color: #0051ff;
+	text-decoration: underline;
+}
+
+.footer-ln {
+	text-align: center;
+}
+
+.footer-ln a {
+	color: #000;
+	font-weight: 500;
+}
